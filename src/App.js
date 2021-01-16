@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Typography from '@material-ui/core/Typography';
+import TabPanel from './Components/TabPanel/TabPanel';
+import Box from '@material-ui/core/Box';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Box mx="auto" classes={{ root: "main-app-header-box" }} p={3}>
+        <Typography variant="h2" classes={{ root: "main-app-header" }}>
+          NS Dashboard
+        </Typography>
+      </Box>
+      <TabPanel />
     </div>
   );
 }
-
-export default App;
