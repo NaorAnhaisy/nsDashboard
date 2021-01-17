@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
 
 const info = [
     { title: "Version", value: "R80.40" },
-    { title: "Version", value: "R80.40" },
-    { title: "Version", value: "R80.40" },
-    { title: "Version", value: "R80.40" }
+    { title: "Jumbo Hotfix", value: "Take 87" },
+    { title: "Last Reboot", value: "17/01 10:31:30" },
+    { title: "Last Failover", value: "17/01 10:31:30" }
 ]
 
 export default function TopInfoCards() {

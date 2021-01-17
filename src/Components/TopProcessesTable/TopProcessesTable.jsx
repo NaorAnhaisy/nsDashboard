@@ -19,7 +19,7 @@ const rows = [
   createData('Gingerbread', 356, 16.0),
 ];
 
-export default function BasicTable() {
+export default function TopProcessesTable() {
   return (
     <TableContainer component={Paper}>
       <Table aria-label="simple table">

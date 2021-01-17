@@ -9,9 +9,7 @@ import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import Dashboard from '../Dashboard/Dashboard';
 import FwCards from '../FwCards/FwCards';
-import SimpleDialogDemo from '../SimpleDialogDemo/SimpleDialogDemo';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -76,8 +74,8 @@ export default function FullWidthTabs() {
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab classes={{ root: "tab-panel-tab" }} label="Item One" {...a11yProps(0)} />
-          <Tab classes={{ root: "tab-panel-tab" }} label="Item Two" {...a11yProps(1)} />
+          <Tab classes={{ root: "tab-panel-tab" }} label="Checkpoint FW" {...a11yProps(0)} />
+          <Tab classes={{ root: "tab-panel-tab" }} label="Cisco ASA" {...a11yProps(1)} />
           <Tab classes={{ root: "tab-panel-tab" }} label="Item Three" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
@@ -87,18 +85,18 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <FwCards />
           </Container>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
           <Container maxWidth="md">
-            <Dashboard />
+            <h1>Blank Page</h1>
           </Container>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           <Container maxWidth="md">
-            <SimpleDialogDemo />
+            <h1>Blank Page</h1>
           </Container>
         </TabPanel>
       </SwipeableViews>
